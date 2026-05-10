@@ -2,7 +2,7 @@ backend:
   name: github
   repo: EdwardKot/edwardkot-site
   branch: main
-  base_url: https://cms-oauth.geshenfeng1.workers.dev
+  base_url: https://cms-oauth.geshenfeng1.workers.dev/callback
   auth_endpoint: auth
 
 media_folder: "static/uploads"
