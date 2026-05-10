@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Edward Kot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn 0.6s ease forwards}
+    @keyframes fadeIn{to{opacity:1}}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:0.5px solid var(--faint)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:0.15em;color:var(--ink);text-decoration:none;text-transform:lowercase}
+    .nav-links{display:flex;gap:2.5rem;list-style:none}
+    .nav-links a{font-size:0.65rem;letter-spacing:0.22em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s}
+    .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+    main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:6rem 3rem;max-width:700px}
+    .page-label{font-size:0.6rem;letter-spacing:0.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
+    .page-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.5rem,5vw,4rem);line-height:1;color:var(--ink);margin-bottom:3.5rem;letter-spacing:0.02em}
+    .page-heading em{font-style:italic}
+    .contact-list{list-style:none}
+    .contact-list li{display:flex;align-items:baseline;gap:2rem;padding:1.5rem 0;border-bottom:0.5px solid var(--faint)}
+    .contact-list li:first-child{border-top:0.5px solid var(--faint)}
+    .contact-label{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#bbb;min-width:90px;flex-shrink:0}
+    .contact-value{font-size:0.875rem;color:var(--ink);letter-spacing:0.03em}
+    .contact-value a{color:var(--ink);text-decoration:none;border-bottom:0.5px solid var(--faint);padding-bottom:1px;transition:border-color .25s}
+    .contact-value a:hover{border-color:var(--ink)}
+    .contact-note{margin-top:3rem;font-size:0.75rem;line-height:1.8;color:#bbb;max-width:400px}
+    footer{padding:1.5rem 3rem;border-top:0.5px solid var(--faint);display:flex;justify-content:space-between}
+    footer span{font-size:0.6rem;letter-spacing:0.15em;color:#ccc;text-transform:uppercase}
+    @media(max-width:768px){nav{padding:1.5rem}main{padding:4rem 1.5rem}footer{padding:1.5rem}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">edward kot</a>
+    <ul class="nav-links">
+      <li><a href="works.html">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="collaborate.html">Collaborate</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <p class="page-label">Contact</p>
+    <h1 class="page-heading">Get in<br><em>Touch</em></h1>
+    <ul class="contact-list">
+      <li>
+        <span class="contact-label">Email</span>
+        <span class="contact-value"><a href="mailto:hello@edwardkot.com">hello@edwardkot.com</a></span>
+      </li>
+      <li>
+        <span class="contact-label">Instagram</span>
+        <span class="contact-value"><a href="https://instagram.com/edwardkot" target="_blank" rel="noopener">@edwardkot</a></span>
+      </li>
+      <li>
+        <span class="contact-label">Based in</span>
+        <span class="contact-value">Milan, Italy</span>
+      </li>
+      <li>
+        <span class="contact-label">Available</span>
+        <span class="contact-value">Europe-wide</span>
+      </li>
+    </ul>
+    <p class="contact-note">For project enquiries, rates, and availability — email is the best way to reach me. I aim to respond within two working days.</p>
+  </main>
+  <footer>
+    <span>© 2025 Edward Kot</span>
+    <span>edwardkot.com</span>
+  </footer>
+</body>
+</html>

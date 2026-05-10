@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Edward Kot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --cream:#f8f6f2; --ink:#1a1916; --mid:#888580; --faint:#e4e1db; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn 0.6s ease forwards}
+    @keyframes fadeIn{to{opacity:1}}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:0.5px solid var(--faint)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:0.15em;color:var(--ink);text-decoration:none;text-transform:lowercase}
+    .nav-links{display:flex;gap:2.5rem;list-style:none}
+    .nav-links a{font-size:0.65rem;letter-spacing:0.22em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s}
+    .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+    main{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 120px)}
+    .about-image{background:var(--faint);position:relative;min-height:500px}
+    .about-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .about-image-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+    .about-image-placeholder span{font-size:0.6rem;letter-spacing:0.2em;color:#ccc;text-transform:uppercase}
+    .about-text{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center}
+    .about-label{font-size:0.6rem;letter-spacing:0.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
+    .about-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;color:var(--ink);margin-bottom:2rem;letter-spacing:0.02em}
+    .about-heading em{font-style:italic}
+    .about-body{font-size:0.875rem;line-height:1.9;color:var(--mid);max-width:420px}
+    .about-body p{margin-bottom:1.25rem}
+    .about-avail{margin-top:2.5rem;padding-top:2rem;border-top:0.5px solid var(--faint);font-size:0.6rem;letter-spacing:0.25em;color:#bbb;text-transform:uppercase}
+    footer{padding:1.5rem 3rem;border-top:0.5px solid var(--faint);display:flex;justify-content:space-between}
+    footer span{font-size:0.6rem;letter-spacing:0.15em;color:#ccc;text-transform:uppercase}
+    @media(max-width:768px){main{grid-template-columns:1fr}.about-image{min-height:300px}.about-text{padding:3rem 1.5rem}nav{padding:1.5rem}footer{padding:1.5rem}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">edward kot</a>
+    <ul class="nav-links">
+      <li><a href="works.html">Works</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="collaborate.html">Collaborate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="about-image">
+      <div class="about-image-placeholder"><span>Portrait photo</span></div>
+    </div>
+    <div class="about-text">
+      <p class="about-label">About</p>
+      <h1 class="about-heading">Edward Kot<br><em>Photographer</em></h1>
+      <div class="about-body">
+        <p>Based in Milan, working across Europe. Edward Kot's photography is drawn to the space between — the quiet interval before something begins, or after it ends.</p>
+        <p>His work spans editorial, commercial, and personal documentary — rooted in a sensitivity to light, atmosphere, and the subtle gestures that pass unnoticed.</p>
+        <p>Clients and collaborators include brands, agencies, and publications operating across fashion, culture, and lifestyle.</p>
+      </div>
+      <p class="about-avail">Available for commissions across Europe</p>
+    </div>
+  </main>
+  <footer>
+    <span>© 2025 Edward Kot</span>
+    <span>edwardkot.com</span>
+  </footer>
+</body>
+</html>

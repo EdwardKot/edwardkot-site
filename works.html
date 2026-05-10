@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works — Edward Kot</title>
+  <meta name="description" content="Photography portfolio by Edward Kot — editorial, commercial, and personal work across Europe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f8f6f2;
+      --ink: #1a1916;
+      --mid: #888580;
+      --faint: #e4e1db;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 3rem;
+      border-bottom: 0.5px solid var(--faint);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      color: var(--ink);
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: var(--mid);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.25s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+
+    /* FILTER BAR */
+    .filter-bar {
+      display: flex;
+      gap: 0;
+      padding: 0 3rem;
+      border-bottom: 0.5px solid var(--faint);
+      overflow-x: auto;
+    }
+    .filter-btn {
+      background: none;
+      border: none;
+      border-bottom: 1.5px solid transparent;
+      padding: 1rem 1.5rem 0.9rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--mid);
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { color: var(--ink); }
+    .filter-btn.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+    /* GRID */
+    .grid-container { padding: 3rem; }
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .work-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--faint);
+    }
+    .work-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s;
+      aspect-ratio: 4/5;
+    }
+    .work-item:hover img { transform: scale(1.03); }
+    .work-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26,25,22,0);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      transition: background 0.4s;
+    }
+    .work-item:hover .work-item-overlay { background: rgba(26,25,22,0.35); }
+    .work-item-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0);
+      transition: color 0.4s;
+    }
+    .work-item:hover .work-item-label { color: rgba(255,255,255,0.8); }
+
+    /* PLACEHOLDER state */
+    .work-placeholder {
+      aspect-ratio: 4/5;
+      background: var(--faint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .work-placeholder span {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #ccc;
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(26,25,22,0.95);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 2rem; right: 2.5rem;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.2s;
+      font-family: 'Jost', sans-serif;
+    }
+    .lightbox-close:hover { color: #fff; }
+
+    footer {
+      padding: 1.5rem 3rem;
+      border-top: 0.5px solid var(--faint);
+      display: flex;
+      justify-content: space-between;
+    }
+    footer span { font-size: 0.6rem; letter-spacing: 0.15em; color: #ccc; text-transform: uppercase; }
+
+    @media (max-width: 768px) {
+      nav { padding: 1.5rem; }
+      .filter-bar { padding: 0 1.5rem; }
+      .grid-container { padding: 1.5rem; }
+      .works-grid { grid-template-columns: repeat(2, 1fr); }
+      footer { padding: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .works-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">edward kot</a>
+    <ul class="nav-links">
+      <li><a href="works.html" class="active">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="collaborate.html">Collaborate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="editorial">Editorial</button>
+    <button class="filter-btn" data-filter="commercial">Commercial</button>
+    <button class="filter-btn" data-filter="travel">Travel</button>
+    <button class="filter-btn" data-filter="personal">Personal</button>
+  </div>
+
+  <div class="grid-container">
+    <div class="works-grid" id="worksGrid">
+      <!-- Populated by JS from works.json -->
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">Close</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <footer>
+    <span>© 2025 Edward Kot</span>
+    <span>edwardkot.com</span>
+  </footer>
+
+  <script>
+    const R2_BASE = 'https://pub-441ec5dec2f94cafac68925856863ac2.r2.dev';
+    let allWorks = [];
+    let activeFilter = 'all';
+
+    async function loadWorks() {
+      try {
+        const res = await fetch('_data/works.json');
+        allWorks = await res.json();
+        renderGrid(allWorks);
+      } catch(e) {
+        // Fallback: show placeholders if no data yet
+        renderPlaceholders();
+      }
+    }
+
+    function renderGrid(works) {
+      const grid = document.getElementById('worksGrid');
+      grid.innerHTML = works.map((w, i) => `
+        <div class="work-item" data-category="${w.category}" onclick="openLightbox('${R2_BASE}/${w.file}')">
+          <img src="${R2_BASE}/${w.file}" alt="${w.title}" loading="lazy">
+          <div class="work-item-overlay">
+            <span class="work-item-label">${w.category}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderPlaceholders() {
+      const grid = document.getElementById('worksGrid');
+      grid.innerHTML = Array(6).fill(0).map(() => `
+        <div class="work-placeholder">
+          <span>Coming soon</span>
+        </div>
+      `).join('');
+    }
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        const filtered = activeFilter === 'all' ? allWorks : allWorks.filter(w => w.category === activeFilter);
+        renderGrid(filtered);
+      });
+    });
+
+    // Lightbox
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    loadWorks();
+  </script>
+</body>
+</html>

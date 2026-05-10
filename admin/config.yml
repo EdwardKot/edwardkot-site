@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/edwardkot-site
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "https://pub-441ec5dec2f94cafac68925856863ac2.r2.dev"
+
+collections:
+  - name: "works"
+    label: "Works"
+    files:
+      - label: "Photo Library"
+        name: "works"
+        file: "_data/works.json"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "File (R2 filename)", name: "file", widget: "string", hint: "Just the filename, e.g. paris-01.jpg" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Editorial", value: "editorial" }
+                  - { label: "Commercial", value: "commercial" }
+                  - { label: "Travel", value: "travel" }
+                  - { label: "Personal", value: "personal" }
+              - { label: "Year", name: "year", widget: "string", required: false }
