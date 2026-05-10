@@ -2,7 +2,7 @@ backend:
   name: github
   repo: EdwardKot/edwardkot-site
   branch: main
-  base_url: https://tangerine-pasca-6c9358.netlify.app
+  base_url: https://cms-oauth.geshenfeng1.workers.dev
   auth_endpoint: auth
 
 media_folder: "static/uploads"
