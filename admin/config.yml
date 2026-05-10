@@ -2,6 +2,8 @@ backend:
   name: github
   repo: EdwardKot/edwardkot-site
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "static/uploads"
 public_folder: "https://pub-441ec5dec2f94cafac68925856863ac2.r2.dev"
