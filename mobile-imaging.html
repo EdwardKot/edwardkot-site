@@ -9,99 +9,270 @@
   <meta property="og:title" content="Smartphone Camera Sample Photographer in Europe">
   <meta property="og:description" content="Official mobile imaging samples, street lifestyle photography and European location work by Milan-based photographer Edward Kot.">
   <meta property="og:url" content="https://edwardkot.com/mobile-imaging.html">
+  <meta property="og:image" content="https://edwardkot.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Edward Kot, smartphone camera sample photographer based in Milan">
   <link rel="canonical" href="https://edwardkot.com/mobile-imaging.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Jost:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://edwardkot.com/mobile-imaging.html#service",
-    "name": "Smartphone Camera Sample Photography in Europe",
-    "serviceType": "Smartphone camera sample photography and mobile imaging production",
-    "url": "https://edwardkot.com/mobile-imaging.html",
-    "description": "Official smartphone camera sample photography, street lifestyle imagery and European location work for mobile technology brands.",
-    "areaServed": [
-      {"@type": "Country", "name": "Italy"},
-      {"@type": "Place", "name": "Europe"}
-    ],
-    "provider": {
-      "@type": "Person",
-      "@id": "https://edwardkot.com/#person",
-      "name": "Edward Kot",
-      "url": "https://edwardkot.com/",
-      "email": "mailto:geshenfeng1@gmail.com",
-      "address": {"@type": "PostalAddress", "addressLocality": "Milan", "addressCountry": "IT"},
-      "sameAs": [
-        "https://instagram.com/edwardkot",
-        "https://www.xiaohongshu.com/user/profile/57553d947fc5b85d339ffc71"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://edwardkot.com/mobile-imaging.html#service",
+        "name": "Smartphone Camera Sample Photography",
+        "serviceType": "Smartphone camera sample photography and mobile imaging production",
+        "url": "https://edwardkot.com/mobile-imaging.html",
+        "description": "Official smartphone camera sample photography, street lifestyle imagery and European location production for mobile technology brands including Xiaomi, OPPO and realme.",
+        "areaServed": [
+          {"@type": "Country", "name": "Italy"},
+          {"@type": "Place", "name": "Europe"}
+        ],
+        "provider": {
+          "@type": "Person",
+          "@id": "https://edwardkot.com/#person"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://edwardkot.com/mobile-imaging.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What type of photography does Edward Kot specialize in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Edward Kot specializes in official smartphone camera sample photography, mobile imaging, street lifestyle imagery and commercial photography across Europe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which brands has Edward Kot worked with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Edward has produced camera sample photography for Xiaomi, OPPO and realme across multiple device launches, with images presented at official product launch events."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Edward Kot based?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Edward is based in Milan, Italy, and is available for commercial assignments across Italy and Europe."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db;--paper:#efede8}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;opacity:0;animation:fadeIn .6s ease forwards}
-    @keyframes fadeIn{to{opacity:1}}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:.5px solid var(--faint)}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:.15em;color:var(--ink);text-decoration:none;text-transform:lowercase;flex-shrink:0}
-    .nav-links{display:flex;gap:2rem;list-style:none}
-    .nav-links a{font-size:.62rem;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s;white-space:nowrap}
-    .nav-links a:hover,.nav-links a.active,.nav-links a:focus-visible{color:var(--ink)}
-    .hero{padding:7rem 3rem 6rem;max-width:1150px}
+    .hero{padding:7rem 3rem 4rem;max-width:1150px}
     .page-label{font-size:.6rem;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
-    h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(3.2rem,7vw,6.5rem);line-height:.94;letter-spacing:.01em;max-width:900px}
+    h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(3.2rem,7vw,6.5rem);line-height:.94;letter-spacing:.01em;max-width:900px;color:var(--ink)}
     h1 em{font-style:italic}
     .hero-intro{font-size:1rem;line-height:1.9;color:var(--mid);max-width:680px;margin-top:3rem}
+
+    /* Before/After Slider */
+    .comparison-slider {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 480px;
+      margin: 4rem auto;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid var(--faint);
+      user-select: none;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      background-color: var(--paper);
+    }
+    .comparison-slider:focus-within {
+      outline: 2px solid var(--ink);
+      outline-offset: 4px;
+    }
+    .comparison-note {
+      max-width: 900px;
+      margin: 4rem auto -2.5rem;
+      padding: 0 1rem;
+      color: var(--mid);
+      font-size: .68rem;
+      line-height: 1.7;
+      letter-spacing: .05em;
+      text-align: center;
+    }
+    .image-before, .image-after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .image-after {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+    .slider-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .slider-label {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: rgba(12, 11, 10, 0.75);
+      color: #fff;
+      padding: 0.5rem 0.8rem;
+      border-radius: 2px;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+    }
+    .label-before { left: 1.5rem; }
+    .label-after { right: 1.5rem; }
+    .slider-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: #fff;
+      transform: translateX(-50%);
+      z-index: 15;
+      pointer-events: none;
+    }
+    .slider-range {
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: ew-resize;
+    }
+    .slider-handle-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1.5px solid var(--faint);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    [data-theme="dark"] .slider-handle-button {
+      background: #1c1a18;
+      color: #fff;
+    }
+
     .proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:.5px solid var(--faint);border-bottom:.5px solid var(--faint)}
     .proof-item{padding:2rem 3rem;border-right:.5px solid var(--faint)}
     .proof-item:last-child{border-right:0}
-    .proof-label{font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:#aaa;margin-bottom:.7rem}
-    .proof-value{font-family:'Cormorant Garamond',serif;font-size:1.35rem;line-height:1.2}
+    .proof-label{font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);margin-bottom:.7rem}
+    .proof-value{font-family:'Cormorant Garamond',serif;font-size:1.35rem;line-height:1.2;color:var(--ink)}
     .section{padding:6rem 3rem;display:grid;grid-template-columns:minmax(220px,.65fr) minmax(480px,1.35fr);gap:6rem;max-width:1200px}
     .section-label{font-size:.58rem;letter-spacing:.25em;color:var(--mid);text-transform:uppercase;padding-top:.4rem}
-    .section-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.8rem);line-height:1.05;margin-bottom:2rem;max-width:720px}
+    .section-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.8rem);line-height:1.05;margin-bottom:2rem;max-width:720px;color:var(--ink)}
     .section-heading em{font-style:italic}
     .section-copy{font-size:.88rem;line-height:1.95;color:var(--mid);max-width:690px}
     .section-copy p+p{margin-top:1.25rem}
+
+    /* Collaboration Table styling */
+    .collaboration-table-wrapper {
+      margin-top: 2.5rem;
+      overflow-x: auto;
+      border-top: 1px solid var(--faint);
+    }
+    .collaboration-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.78rem;
+    }
+    .collaboration-table th {
+      padding: 1rem 0.5rem;
+      border-bottom: 1px solid var(--faint);
+      font-size: 0.54rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      font-weight: 500;
+    }
+    .collaboration-table td {
+      padding: 1.2rem 0.5rem;
+      border-bottom: 0.5px solid var(--faint);
+      color: var(--ink);
+    }
+    .collaboration-table tr:last-child td {
+      border-bottom: none;
+    }
+    .collaboration-table td strong {
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+    .collaboration-nda {
+      margin-top: 1.2rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      font-style: italic;
+    }
+    .collaboration-nda a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+
     .capabilities{background:var(--paper);max-width:none}
     .capabilities .section-inner{grid-column:2}
-    .capability-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:.5px solid #d8d5cf;margin-top:3rem}
-    .capability{padding:2rem 2.5rem 2rem 0;border-bottom:.5px solid #d8d5cf}
-    .capability:nth-child(odd){border-right:.5px solid #d8d5cf;padding-right:2.5rem}
+    .capability-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:.5px solid var(--faint);margin-top:3rem}
+    .capability{padding:2rem 2.5rem 2rem 0;border-bottom:.5px solid var(--faint)}
+    .capability:nth-child(odd){border-right:.5px solid var(--faint);padding-right:2.5rem}
     .capability:nth-child(even){padding-left:2.5rem}
-    .capability h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.5rem;margin-bottom:.65rem}
+    .capability h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.5rem;margin-bottom:.65rem;color:var(--ink)}
     .capability p{font-size:.78rem;line-height:1.8;color:var(--mid)}
     .process-list{list-style:none;border-top:.5px solid var(--faint);margin-top:3rem}
     .process-list li{display:grid;grid-template-columns:60px 180px 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:.5px solid var(--faint);align-items:baseline}
-    .process-num{font-size:.54rem;letter-spacing:.16em;color:#aaa}
-    .process-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem}
+    .process-num{font-size:.54rem;letter-spacing:.16em;color:var(--mid)}
+    .process-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink)}
     .process-desc{font-size:.78rem;line-height:1.7;color:var(--mid)}
-    .faq{background:var(--ink);color:var(--cream);max-width:none}
-    .faq .section-label{color:rgba(248,246,242,.5)}
+    .faq{background:var(--paper);color:var(--ink);max-width:none}
+    .faq .section-label{color:var(--mid)}
     .faq-list{grid-column:2}
-    .faq-list h2{color:var(--cream)}
-    details{border-top:.5px solid rgba(248,246,242,.2);padding:1.4rem 0}
-    details:last-child{border-bottom:.5px solid rgba(248,246,242,.2)}
-    summary{cursor:pointer;list-style:none;font-family:'Cormorant Garamond',serif;font-size:1.35rem;padding-right:2rem;position:relative}
+    .faq-list h2{color:var(--ink)}
+    details{border-top:.5px solid var(--faint);padding:1.4rem 0}
+    details:last-child{border-bottom:.5px solid var(--faint)}
+    summary{cursor:pointer;list-style:none;font-family:'Cormorant Garamond',serif;font-size:1.35rem;padding-right:2rem;position:relative;color:var(--ink)}
     summary::-webkit-details-marker{display:none}
-    summary::after{content:'+';position:absolute;right:0;color:rgba(248,246,242,.55);font-family:'Jost',sans-serif;font-size:1rem}
+    summary::after{content:'+';position:absolute;right:0;color:var(--mid);font-family:'Jost',sans-serif;font-size:1rem}
     details[open] summary::after{content:'\2212'}
-    details p{font-size:.8rem;line-height:1.9;color:rgba(248,246,242,.62);max-width:670px;padding:1rem 2rem .2rem 0}
+    details p{font-size:.8rem;line-height:1.9;color:var(--mid);max-width:670px;padding:1rem 2rem .2rem 0}
     .cta{padding:7rem 3rem;text-align:center}
-    .cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1;margin-bottom:2rem}
+    .cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1;margin-bottom:2rem;color:var(--ink)}
     .cta h2 em{font-style:italic}
     .cta p{font-size:.82rem;color:var(--mid);line-height:1.8;margin-bottom:2rem}
     .cta-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;border-bottom:.5px solid var(--ink);padding-bottom:.4rem}
-    footer{padding:1.5rem 3rem;border-top:.5px solid var(--faint);display:flex;justify-content:space-between}
-    footer span{font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase}
-    @media(max-width:900px){nav{align-items:flex-start;padding:1.4rem 1.5rem;gap:1.5rem}.nav-links{gap:1.15rem;overflow-x:auto;padding-bottom:.3rem}.nav-links a{font-size:.56rem;letter-spacing:.15em}.hero{padding:5rem 2rem}.proof{grid-template-columns:repeat(2,1fr)}.proof-item:nth-child(2){border-right:0}.proof-item:nth-child(-n+2){border-bottom:.5px solid var(--faint)}.section{padding:5rem 2rem;grid-template-columns:1fr;gap:2rem}.capabilities .section-inner,.faq-list{grid-column:1}}
-    @media(max-width:600px){nav{flex-direction:column}.nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:.9rem 1.2rem}.hero{padding:4.5rem 1.5rem}.proof{grid-template-columns:1fr}.proof-item{border-right:0;border-bottom:.5px solid var(--faint);padding:1.5rem}.proof-item:last-child{border-bottom:0}.section{padding:4rem 1.5rem}.capability-grid{grid-template-columns:1fr}.capability,.capability:nth-child(odd),.capability:nth-child(even){border-right:0;padding:1.5rem 0}.process-list li{grid-template-columns:42px 1fr;gap:.5rem 1rem}.process-desc{grid-column:2}.cta{padding:5rem 1.5rem}footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}}
-    @media(prefers-reduced-motion:reduce){body{animation:none;opacity:1}}
+    @media(max-width:900px){.hero{padding:5rem 2rem}.proof{grid-template-columns:repeat(2,1fr)}.proof-item:nth-child(2){border-right:0}.proof-item:nth-child(-n+2){border-bottom:.5px solid var(--faint)}.section{padding:5rem 2rem;grid-template-columns:1fr;gap:2rem}.capabilities .section-inner,.faq-list{grid-column:1}.comparison-slider{height:320px}}
+    @media(max-width:600px){.hero{padding:11rem 1.5rem 4.5rem}.proof{grid-template-columns:1fr}.proof-item{border-right:0;border-bottom:.5px solid var(--faint);padding:1.5rem}.proof-item:last-child{border-bottom:0}.section{padding:4rem 1.5rem}.capability-grid{grid-template-columns:1fr}.capability,.capability:nth-child(odd),.capability:nth-child(even){border-right:0;padding:1.5rem 0}.process-list li{grid-template-columns:42px 1fr;gap:.5rem 1rem}.process-desc{grid-column:2}.cta{padding:5rem 1.5rem}.comparison-note{margin-top:3rem}.comparison-slider{height:240px}}
   </style>
 </head>
 <body>
@@ -113,6 +284,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="collaborate.html">Collaborate</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Dark</button></li>
     </ul>
   </nav>
 
@@ -121,6 +293,146 @@
     <h1>Smartphone camera sample photography <em>in Europe</em></h1>
     <p class="hero-intro">Edward Kot is a Milan-based photographer producing official camera sample imagery for mobile technology brands. His work combines real European locations, street observation and lifestyle photography with the demands of a product launch.</p>
   </header>
+
+  <p class="comparison-note" id="comparison-note">Illustrative rendering comparison for explaining mobile imaging priorities. This graphic is not a client camera sample.</p>
+  <div class="comparison-slider" id="imagingSlider">
+    <div class="image-before">
+      <svg viewBox="0 0 900 480" class="slider-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="before-sky" cx="50%" cy="30%" r="80%">
+            <stop offset="0%" stop-color="#1e1c28"/>
+            <stop offset="100%" stop-color="#0d0c10"/>
+          </radialGradient>
+          <filter id="before-noise" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+            <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+            <feBlend mode="overlay" in="SourceGraphic" in2="mono" result="noisy"/>
+          </filter>
+          <filter id="before-blur-warm">
+            <feGaussianBlur stdDeviation="18"/>
+          </filter>
+          <filter id="before-blur-soft">
+            <feGaussianBlur stdDeviation="12"/>
+          </filter>
+        </defs>
+        <!-- Night sky with grain -->
+        <rect width="100%" height="100%" fill="url(#before-sky)" filter="url(#before-noise)"/>
+        <!-- Ground / horizon -->
+        <rect x="0" y="360" width="100%" height="120" fill="#0a090c" opacity="0.7"/>
+        <line x1="0" y1="365" x2="900" y2="365" stroke="#2a2830" stroke-width="0.5"/>
+        <!-- Blurry warm streetlamps — unfocused, hazy -->
+        <circle cx="180" cy="200" r="60" fill="#c8862a" opacity="0.2" filter="url(#before-blur-warm)"/>
+        <circle cx="180" cy="200" r="25" fill="#e8a840" opacity="0.25" filter="url(#before-blur-soft)"/>
+        <circle cx="420" cy="180" r="55" fill="#d49535" opacity="0.18" filter="url(#before-blur-warm)"/>
+        <circle cx="420" cy="180" r="22" fill="#f0b858" opacity="0.2" filter="url(#before-blur-soft)"/>
+        <circle cx="680" cy="210" r="65" fill="#b8782a" opacity="0.22" filter="url(#before-blur-warm)"/>
+        <circle cx="680" cy="210" r="28" fill="#d8a045" opacity="0.2" filter="url(#before-blur-soft)"/>
+        <!-- Dim ground reflections -->
+        <ellipse cx="180" cy="420" rx="40" ry="15" fill="#c8862a" opacity="0.08" filter="url(#before-blur-warm)"/>
+        <ellipse cx="420" cy="430" rx="35" ry="12" fill="#d49535" opacity="0.06" filter="url(#before-blur-warm)"/>
+        <ellipse cx="680" cy="415" rx="45" ry="14" fill="#b8782a" opacity="0.07" filter="url(#before-blur-warm)"/>
+        <!-- Building silhouettes — vague shapes -->
+        <rect x="100" y="240" width="70" height="125" fill="#111015" opacity="0.6" rx="1"/>
+        <rect x="330" y="210" width="90" height="155" fill="#0f0e13" opacity="0.55" rx="1"/>
+        <rect x="580" y="230" width="80" height="135" fill="#12111a" opacity="0.5" rx="1"/>
+        <rect x="740" y="260" width="60" height="105" fill="#0e0d12" opacity="0.45" rx="1"/>
+        <!-- Small scattered dim window lights -->
+        <rect x="120" y="270" width="4" height="5" fill="#c8962a" opacity="0.15" rx="1"/>
+        <rect x="145" y="290" width="4" height="5" fill="#c8962a" opacity="0.12" rx="1"/>
+        <rect x="355" y="240" width="5" height="5" fill="#d4a545" opacity="0.1" rx="1"/>
+        <rect x="370" y="280" width="4" height="5" fill="#c8862a" opacity="0.1" rx="1"/>
+        <rect x="600" y="260" width="4" height="5" fill="#b88a3a" opacity="0.12" rx="1"/>
+        <rect x="615" y="300" width="4" height="5" fill="#c89640" opacity="0.1" rx="1"/>
+      </svg>
+      <span class="slider-label label-before">Standard rendering</span>
+    </div>
+    <div class="image-after">
+      <svg viewBox="0 0 900 480" class="slider-svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="after-sky" cx="50%" cy="25%" r="85%">
+            <stop offset="0%" stop-color="#0c1018"/>
+            <stop offset="50%" stop-color="#080a12"/>
+            <stop offset="100%" stop-color="#04050a"/>
+          </radialGradient>
+          <filter id="after-glow-warm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8"/>
+          </filter>
+          <filter id="after-glow-cool" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6"/>
+          </filter>
+          <filter id="after-bokeh" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3"/>
+          </filter>
+          <linearGradient id="after-ground" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0a0c14"/>
+            <stop offset="100%" stop-color="#050608"/>
+          </linearGradient>
+        </defs>
+        <!-- Clean night sky — crisp, no noise -->
+        <rect width="100%" height="100%" fill="url(#after-sky)"/>
+        <!-- Subtle star points -->
+        <circle cx="120" cy="60" r="0.8" fill="#fff" opacity="0.4"/>
+        <circle cx="340" cy="45" r="0.6" fill="#fff" opacity="0.3"/>
+        <circle cx="560" cy="75" r="0.7" fill="#fff" opacity="0.35"/>
+        <circle cx="780" cy="55" r="0.5" fill="#fff" opacity="0.25"/>
+        <circle cx="250" cy="95" r="0.6" fill="#fff" opacity="0.3"/>
+        <circle cx="650" cy="40" r="0.7" fill="#fff" opacity="0.35"/>
+        <!-- Ground -->
+        <rect x="0" y="360" width="100%" height="120" fill="url(#after-ground)"/>
+        <line x1="0" y1="365" x2="900" y2="365" stroke="#1a1e2a" stroke-width="0.5"/>
+        <!-- Crisp streetlamps with warm bokeh halos -->
+        <circle cx="180" cy="200" r="35" fill="#f0a830" opacity="0.15" filter="url(#after-glow-warm)"/>
+        <circle cx="180" cy="200" r="12" fill="#ffc44d" opacity="0.6" filter="url(#after-bokeh)"/>
+        <circle cx="180" cy="200" r="4" fill="#fff8e0" opacity="0.9"/>
+        <circle cx="420" cy="178" r="30" fill="#e8a040" opacity="0.12" filter="url(#after-glow-warm)"/>
+        <circle cx="420" cy="178" r="10" fill="#ffc040" opacity="0.55" filter="url(#after-bokeh)"/>
+        <circle cx="420" cy="178" r="3.5" fill="#fff8e0" opacity="0.85"/>
+        <circle cx="680" cy="205" r="38" fill="#f0a830" opacity="0.14" filter="url(#after-glow-warm)"/>
+        <circle cx="680" cy="205" r="14" fill="#ffc44d" opacity="0.5" filter="url(#after-bokeh)"/>
+        <circle cx="680" cy="205" r="4.5" fill="#fff8e0" opacity="0.88"/>
+        <!-- Cool accent neon — signage / storefront -->
+        <rect x="505" y="290" width="45" height="3" fill="#5090e8" opacity="0.5" rx="1.5" filter="url(#after-glow-cool)"/>
+        <rect x="505" y="290" width="45" height="2" fill="#78b8ff" opacity="0.7" rx="1"/>
+        <rect x="280" y="310" width="30" height="2.5" fill="#e05080" opacity="0.35" rx="1.2" filter="url(#after-glow-cool)"/>
+        <rect x="280" y="310" width="30" height="1.5" fill="#ff6090" opacity="0.55" rx="0.75"/>
+        <!-- Building silhouettes — sharp, defined edges -->
+        <rect x="100" y="240" width="70" height="125" fill="#0a0c14" rx="1"/>
+        <rect x="330" y="210" width="90" height="155" fill="#080a12" rx="1"/>
+        <rect x="580" y="230" width="80" height="135" fill="#0b0d16" rx="1"/>
+        <rect x="740" y="260" width="60" height="105" fill="#090b13" rx="1"/>
+        <!-- Bright, crisp window lights -->
+        <rect x="120" y="268" width="5" height="6" fill="#ffd070" opacity="0.55" rx="0.5"/>
+        <rect x="145" y="288" width="5" height="6" fill="#ffc860" opacity="0.5" rx="0.5"/>
+        <rect x="130" y="310" width="5" height="6" fill="#ffe088" opacity="0.4" rx="0.5"/>
+        <rect x="355" y="238" width="6" height="7" fill="#ffd878" opacity="0.5" rx="0.5"/>
+        <rect x="375" y="275" width="5" height="6" fill="#ffc860" opacity="0.45" rx="0.5"/>
+        <rect x="350" y="310" width="6" height="6" fill="#ffe088" opacity="0.4" rx="0.5"/>
+        <rect x="395" y="250" width="5" height="6" fill="#ffd070" opacity="0.42" rx="0.5"/>
+        <rect x="600" y="258" width="5" height="6" fill="#ffd070" opacity="0.5" rx="0.5"/>
+        <rect x="620" y="295" width="5" height="6" fill="#ffc860" opacity="0.45" rx="0.5"/>
+        <rect x="635" y="265" width="5" height="6" fill="#ffe088" opacity="0.4" rx="0.5"/>
+        <rect x="755" y="280" width="5" height="6" fill="#ffd070" opacity="0.45" rx="0.5"/>
+        <rect x="760" y="310" width="5" height="6" fill="#ffc860" opacity="0.4" rx="0.5"/>
+        <!-- Clean ground reflections with crisp edges -->
+        <ellipse cx="180" cy="410" rx="30" ry="10" fill="#f0a830" opacity="0.12" filter="url(#after-bokeh)"/>
+        <line x1="165" y1="400" x2="195" y2="400" stroke="#ffc44d" stroke-width="1" opacity="0.2"/>
+        <ellipse cx="420" cy="420" rx="25" ry="8" fill="#e8a040" opacity="0.1" filter="url(#after-bokeh)"/>
+        <line x1="408" y1="410" x2="432" y2="410" stroke="#ffc040" stroke-width="1" opacity="0.18"/>
+        <ellipse cx="680" cy="408" rx="32" ry="11" fill="#f0a830" opacity="0.11" filter="url(#after-bokeh)"/>
+        <line x1="662" y1="398" x2="698" y2="398" stroke="#ffc44d" stroke-width="1" opacity="0.2"/>
+        <!-- Cool reflection on wet ground -->
+        <line x1="497" y1="395" x2="555" y2="395" stroke="#5090e8" stroke-width="1" opacity="0.12"/>
+      </svg>
+      <span class="slider-label label-after">Enhanced rendering</span>
+    </div>
+    <div class="slider-handle">
+      <div class="slider-handle-line"></div>
+      <div class="slider-handle-button" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+      </div>
+    </div>
+    <input class="slider-range" id="comparisonRange" type="range" min="0" max="100" value="50" aria-describedby="comparison-note" aria-label="Adjust the illustrative mobile imaging comparison">
+  </div>
 
   <section class="proof" aria-label="Experience highlights">
     <div class="proof-item"><p class="proof-label">Based in</p><p class="proof-value">Milan, Italy</p></div>
@@ -135,7 +447,37 @@
       <h2 class="section-heading">Images that make mobile camera capability <em>visible and credible</em></h2>
       <div class="section-copy">
         <p>Camera sample photography sits between visual storytelling and product demonstration. The image must feel natural and memorable while clearly showing what the camera can do in real light, real places and real moments.</p>
-        <p>Edward has photographed official samples for Xiaomi, OPPO and realme across multiple device launches. The resulting work has appeared in formal product launch presentations. Individual model details can be discussed privately where project confidentiality allows.</p>
+        <p>Edward has produced camera sample photography for Xiaomi, OPPO and realme across multiple device launches. His images have been presented at official product launch events. Specific model names and project materials are shared only when publication permissions allow.</p>
+
+        <div class="collaboration-table-wrapper">
+          <table class="collaboration-table">
+            <thead>
+              <tr>
+                <th scope="col">Brand</th>
+                <th scope="col">Confirmed experience</th>
+                <th scope="col">Public details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Xiaomi</strong></td>
+                <td>Smartphone camera sample photography</td>
+                <td>Shared when permitted</td>
+              </tr>
+              <tr>
+                <td><strong>OPPO</strong></td>
+                <td>Smartphone camera sample photography</td>
+                <td>Shared when permitted</td>
+              </tr>
+              <tr>
+                <td><strong>realme</strong></td>
+                <td>Smartphone camera sample photography</td>
+                <td>Shared when permitted</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="collaboration-nda">For current photography and regular visual updates, visit <a href="https://instagram.com/edwardkot" target="_blank" rel="noopener noreferrer">@edwardkot on Instagram</a>. Confidential portfolio discussions are available by email.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -148,7 +490,7 @@
         <article class="capability"><h3>Camera samples</h3><p>Official still photography created to demonstrate mobile camera performance through clear, believable visual situations.</p></article>
         <article class="capability"><h3>Street &amp; lifestyle</h3><p>Observational urban imagery, people, atmosphere and everyday moments shaped for a global product audience.</p></article>
         <article class="capability"><h3>European locations</h3><p>Milan-based production with access to varied city, architecture, travel and lifestyle environments across Europe.</p></article>
-        <article class="capability"><h3>Launch context</h3><p>Experience delivering photographs intended for official product presentations, with discretion around unreleased devices and confidential briefs.</p></article>
+        <article class="capability"><h3>Launch context</h3><p>Experience delivering photographs intended for official product presentations, with discretion around confidential launch briefs.</p></article>
       </div>
     </div>
   </section>
@@ -173,7 +515,7 @@
       <details><summary>What type of photography does Edward specialize in?</summary><p>Edward specializes in official smartphone camera sample photography, mobile imaging, street lifestyle imagery and commercial photography.</p></details>
       <details><summary>Has Edward worked with mobile technology brands?</summary><p>Yes. He has produced camera sample photography for Xiaomi, OPPO and realme across multiple device launches, with images presented at official launch events.</p></details>
       <details><summary>Where is Edward based?</summary><p>Edward is based in Milan, Italy, and is available for assignments across Italy and Europe.</p></details>
-      <details><summary>Can specific phone models and projects be shared?</summary><p>Some projects involve unreleased products or confidential briefs. Available project details and relevant examples can be discussed directly when confidentiality permits.</p></details>
+      <details><summary>Can specific phone models and projects be shared?</summary><p>Available project details and relevant examples can be discussed directly when publication permissions and confidentiality allow.</p></details>
       <details><summary>How can a brand or agency enquire?</summary><p>Email <a href="mailto:geshenfeng1@gmail.com" style="color:inherit">geshenfeng1@gmail.com</a> with the project timing, intended locations and a short description of the camera sample brief.</p></details>
     </div>
   </section>
@@ -188,5 +530,27 @@
     <span>© 2026 Edward Kot</span>
     <span>Milan · Europe</span>
   </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('imagingSlider');
+      const range = document.getElementById('comparisonRange');
+      if (slider && range) {
+        const afterImg = slider.querySelector('.image-after');
+        const handle = slider.querySelector('.slider-handle');
+
+        const updateSlider = (value) => {
+          const position = Number(value);
+          afterImg.style.clipPath = `polygon(${position}% 0, 100% 0, 100% 100%, ${position}% 100%)`;
+          handle.style.left = `${position}%`;
+          range.setAttribute('aria-valuetext', `${position}% standard rendering, ${100 - position}% enhanced rendering`);
+        };
+
+        range.addEventListener('input', () => updateSlider(range.value));
+        updateSlider(range.value);
+      }
+    });
+  </script>
 </body>
 </html>

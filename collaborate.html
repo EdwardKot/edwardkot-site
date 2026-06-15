@@ -9,22 +9,19 @@
   <meta property="og:title" content="Collaborate with Edward Kot">
   <meta property="og:description" content="Mobile imaging, commercial, editorial and documentary photography assignments across Europe.">
   <meta property="og:url" content="https://edwardkot.com/collaborate.html">
+  <meta property="og:image" content="https://edwardkot.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Edward Kot, smartphone camera sample photographer based in Milan">
   <link rel="canonical" href="https://edwardkot.com/collaborate.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Jost:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>(function(){const savedTheme=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',savedTheme)})();</script>
   <style>
-    :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn .6s ease forwards}
-    @keyframes fadeIn{to{opacity:1}}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:.5px solid var(--faint)}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:.15em;color:var(--ink);text-decoration:none;text-transform:lowercase;flex-shrink:0}
-    .nav-links{display:flex;gap:2rem;list-style:none}
-    .nav-links a{font-size:.62rem;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s;white-space:nowrap}
-    .nav-links a:hover,.nav-links a.active,.nav-links a:focus-visible{color:var(--ink)}
-    main{flex:1;padding:6rem 3rem;max-width:940px}
+    main{flex:1;padding:7rem 3rem 6rem;max-width:940px}
     .page-label{font-size:.6rem;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
     .page-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.8rem,5vw,4.5rem);line-height:1;color:var(--ink);margin-bottom:3rem;letter-spacing:.02em}
     .page-heading em{font-style:italic}
@@ -34,7 +31,7 @@
     .service-item:nth-child(even){padding-left:3rem;border-left:.5px solid var(--faint)}
     .service-item.featured{grid-column:1/-1;display:grid;grid-template-columns:80px 240px 1fr;gap:1.5rem;align-items:baseline;padding-right:0}
     .service-item.featured .service-num{margin:0}
-    .service-num{font-size:.55rem;letter-spacing:.2em;color:#aaa;text-transform:uppercase;margin-bottom:.75rem}
+    .service-num{font-size:.55rem;letter-spacing:.2em;color:var(--mid);text-transform:uppercase;margin-bottom:.75rem}
     .service-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.45rem;color:var(--ink);margin-bottom:.5rem;letter-spacing:.03em}
     .service-desc{font-size:.8rem;line-height:1.8;color:var(--mid)}
     .service-desc a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:.5px}
@@ -43,11 +40,8 @@
     .cta-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;transition:gap .25s}
     .cta-link:hover,.cta-link:focus-visible{gap:16px}
     .cta-link::after{content:'\2192';font-size:.9rem}
-    footer{padding:1.5rem 3rem;border-top:.5px solid var(--faint);display:flex;justify-content:space-between}
-    footer span{font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase}
-    @media(max-width:900px){nav{align-items:flex-start;padding:1.4rem 1.5rem;gap:1.5rem}.nav-links{gap:1.15rem;overflow-x:auto;padding-bottom:.3rem}.nav-links a{font-size:.56rem;letter-spacing:.15em}main{padding:5rem 2rem}}
-    @media(max-width:650px){nav{flex-direction:column}.nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:.9rem 1.2rem}main{padding:4rem 1.5rem}.services-grid{grid-template-columns:1fr}.service-item,.service-item:nth-child(even){padding:1.75rem 0;border-left:0}.service-item.featured{grid-column:1;display:block}.service-item.featured .service-num{margin-bottom:.75rem}footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}}
-    @media(prefers-reduced-motion:reduce){body{animation:none;opacity:1}}
+    @media(max-width:900px){main{padding:6rem 2rem 5rem}}
+    @media(max-width:650px){main{padding:10.5rem 1.5rem 4rem}.services-grid{grid-template-columns:1fr}.service-item,.service-item:nth-child(even){padding:1.75rem 0;border-left:0}.service-item.featured{grid-column:1;display:block}.service-item.featured .service-num{margin-bottom:.75rem}}
   </style>
 </head>
 <body>
@@ -59,6 +53,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="collaborate.html" class="active" aria-current="page">Collaborate</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Dark</button></li>
     </ul>
   </nav>
 
@@ -103,5 +98,7 @@
     <span>© 2026 Edward Kot</span>
     <span>Milan · Europe</span>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -8,29 +8,30 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Photography Portfolio | Edward Kot">
   <meta property="og:description" content="Mobile imaging, commercial, editorial, travel and personal photography across Europe.">
+  <meta property="og:image" content="https://edwardkot.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Edward Kot, smartphone camera sample photographer based in Milan">
   <meta property="og:url" content="https://edwardkot.com/works.html">
   <link rel="canonical" href="https://edwardkot.com/works.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Jost:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{font-size:16px}
-    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;opacity:0;animation:fadeIn .6s ease forwards}
-    @keyframes fadeIn{to{opacity:1}}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:.5px solid var(--faint)}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:.15em;color:var(--ink);text-decoration:none;text-transform:lowercase;flex-shrink:0}
-    .nav-links{display:flex;gap:2rem;list-style:none}
-    .nav-links a{font-size:.62rem;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s;white-space:nowrap}
-    .nav-links a:hover,.nav-links a.active,.nav-links a:focus-visible{color:var(--ink)}
     .works-intro{padding:5rem 3rem 4rem;display:grid;grid-template-columns:minmax(240px,.7fr) minmax(460px,1.3fr);gap:5rem;max-width:1150px}
     .page-label{font-size:.6rem;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;padding-top:.6rem}
-    .works-intro h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.5rem,5vw,4.7rem);line-height:1;letter-spacing:.01em;margin-bottom:1.5rem}
+    .works-intro h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.5rem,5vw,4.7rem);line-height:1;letter-spacing:.01em;margin-bottom:1.5rem;color:var(--ink)}
     .works-intro h1 em{font-style:italic}
     .works-intro p{font-size:.84rem;line-height:1.9;color:var(--mid);max-width:620px}
-    .works-intro a{color:var(--ink);text-underline-offset:4px;text-decoration-thickness:.5px}
+    .works-intro p a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:.5px}
     .filter-bar{display:flex;gap:0;padding:0 3rem;border-top:.5px solid var(--faint);border-bottom:.5px solid var(--faint);overflow-x:auto}
     .filter-btn{background:none;border:none;border-bottom:1.5px solid transparent;padding:1rem 1.5rem .9rem;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mid);cursor:pointer;transition:color .2s,border-color .2s;white-space:nowrap}
     .filter-btn:hover,.filter-btn:focus-visible{color:var(--ink)}
@@ -45,19 +46,67 @@
     .work-item:hover .work-item-overlay,.work-item:focus-visible .work-item-overlay{background:rgba(26,25,22,.35)}
     .work-item-label{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0);transition:color .4s}
     .work-item:hover .work-item-label,.work-item:focus-visible .work-item-label{color:rgba(255,255,255,.85)}
-    .empty-state{grid-column:1/-1;min-height:340px;background:var(--faint);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem}
-    .empty-state h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:.8rem}
-    .empty-state p{font-size:.76rem;line-height:1.8;color:var(--mid);max-width:480px}
-    .lightbox{display:none;position:fixed;inset:0;background:rgba(26,25,22,.96);z-index:200;align-items:center;justify-content:center;padding:2rem}
+    /* Immersive Empty State */
+    .empty-state {
+      grid-column: 1/-1;
+      min-height: calc(100vh - 20rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      padding: 3rem 0;
+      max-width: 800px;
+    }
+    .empty-state h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 4.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 2.2rem;
+    }
+    .empty-state h2 em {
+      font-style: italic;
+    }
+    .empty-desc {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: var(--mid);
+      max-width: 580px;
+      margin-bottom: 3rem;
+    }
+    .empty-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .empty-cta span {
+      color: var(--mid);
+    }
+    .empty-cta a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 0.5px solid var(--ink);
+      padding-bottom: 2px;
+      align-self: flex-start;
+      transition: border-color 0.25s;
+    }
+    .empty-cta a:hover {
+      border-bottom-color: transparent;
+    }
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(12,11,10,.98);z-index:200;align-items:center;justify-content:center;padding:2rem}
     .lightbox.open{display:flex}
     .lightbox img{max-width:90vw;max-height:90vh;object-fit:contain}
     .lightbox-close{position:absolute;top:2rem;right:2.5rem;background:none;border:none;color:rgba(255,255,255,.55);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:color .2s;font-family:'Jost',sans-serif}
     .lightbox-close:hover,.lightbox-close:focus-visible{color:#fff}
-    footer{padding:1.5rem 3rem;border-top:.5px solid var(--faint);display:flex;justify-content:space-between}
-    footer span{font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase}
-    @media(max-width:900px){nav{align-items:flex-start;padding:1.4rem 1.5rem;gap:1.5rem}.nav-links{gap:1.15rem;overflow-x:auto;padding-bottom:.3rem}.nav-links a{font-size:.56rem;letter-spacing:.15em}.works-intro{padding:4rem 2rem;grid-template-columns:1fr;gap:1.5rem}.filter-bar{padding:0 1.5rem}.grid-container{padding:1.5rem}.works-grid{grid-template-columns:repeat(2,1fr)}footer{padding:1.5rem}}
-    @media(max-width:600px){nav{flex-direction:column}.nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:.9rem 1.2rem}.works-intro{padding:3.5rem 1.5rem}.works-grid{grid-template-columns:1fr}.empty-state{min-height:280px}footer{flex-direction:column;gap:.5rem;text-align:center}}
-    @media(prefers-reduced-motion:reduce){body{animation:none;opacity:1}.work-item img{transition:none}}
+    @media(max-width:900px){.works-intro{padding:4rem 2rem;grid-template-columns:1fr;gap:1.5rem}.filter-bar{padding:0 1.5rem}.grid-container{padding:1.5rem}.works-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.works-intro{padding:11rem 1.5rem 3.5rem}.works-grid{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){.work-item img{transition:none}}
   </style>
 </head>
 <body>
@@ -69,6 +118,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="collaborate.html">Collaborate</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Dark</button></li>
     </ul>
   </nav>
 
@@ -76,7 +126,7 @@
     <p class="page-label">Selected Work</p>
     <div>
       <h1>Photography across <em>mobile imaging</em>, editorial and personal work</h1>
-      <p>Edward Kot works across Europe on official smartphone camera samples, commercial assignments and observational photography. Selected launch work for Xiaomi, OPPO and realme is being prepared for publication. Learn more about his <a href="mobile-imaging.html">mobile imaging experience</a>.</p>
+      <p>Edward Kot works across Europe on official smartphone camera samples, commercial assignments and observational photography. Current photography and recent updates are published more regularly on <a href="https://instagram.com/edwardkot" target="_blank" rel="noopener noreferrer">Instagram</a>. Learn more about his <a href="mobile-imaging.html">mobile imaging experience</a>.</p>
     </div>
   </header>
 
@@ -102,6 +152,7 @@
     <span>edwardkot.com</span>
   </footer>
 
+  <script src="main.js"></script>
   <script>
     const R2_BASE = 'https://pub-441ec5dec2f94cafac68925856863ac2.r2.dev';
     const grid = document.getElementById('worksGrid');
@@ -118,16 +169,27 @@
         if (!response.ok) throw new Error(`Unable to load works: ${response.status}`);
         const data = await response.json();
         allWorks = Array.isArray(data) ? data : Array.isArray(data.items) ? data.items : [];
+
+        // Hide filter bar if there are absolutely no works in the database
+        const filterBar = document.querySelector('.filter-bar');
+        if (allWorks.length === 0) {
+          if (filterBar) filterBar.style.display = 'none';
+        } else {
+          if (filterBar) filterBar.style.display = 'flex';
+        }
+
         renderGrid(allWorks);
       } catch (error) {
-        renderEmptyState('Selected work is currently being prepared. Please check back soon.');
+        const filterBar = document.querySelector('.filter-bar');
+        if (filterBar) filterBar.style.display = 'none';
+        renderEmptyState('The website portfolio could not be loaded right now. Current photography and recent updates are available on Instagram.');
       }
     }
 
     function renderGrid(works) {
       grid.replaceChildren();
       if (!works.length) {
-        renderEmptyState(activeFilter === 'all' ? 'Selected work is currently being prepared. Please check back soon.' : 'No published work is available in this category yet.');
+        renderEmptyState(activeFilter === 'all' ? 'This website portfolio is being assembled. Current photography and recent updates are available on Instagram.' : 'No published work is available in this category yet.');
         return;
       }
 
@@ -158,18 +220,30 @@
         grid.append(item);
       });
 
-      if (!grid.children.length) renderEmptyState('Selected work is currently being prepared. Please check back soon.');
+      if (!grid.children.length) renderEmptyState('This website portfolio is being assembled. Current photography and recent updates are available on Instagram.');
     }
 
     function renderEmptyState(message) {
       grid.replaceChildren();
       const state = document.createElement('div');
-      const heading = document.createElement('h2');
-      const text = document.createElement('p');
       state.className = 'empty-state';
-      heading.textContent = 'Portfolio in preparation';
-      text.textContent = message;
-      state.append(heading, text);
+      const heading = document.createElement('h2');
+      heading.innerHTML = 'The website portfolio is <br><em>under preparation</em>';
+
+      const desc = document.createElement('p');
+      desc.className = 'empty-desc';
+      desc.textContent = message;
+
+      const cta = document.createElement('div');
+      cta.className = 'empty-cta';
+      cta.innerHTML = `
+        <span>Current photography:</span>
+        <a href="https://instagram.com/edwardkot" target="_blank" rel="noopener noreferrer">Instagram · @edwardkot</a>
+        <span>Commercial enquiries:</span>
+        <a href="mailto:geshenfeng1@gmail.com">geshenfeng1@gmail.com</a>
+      `;
+
+      state.append(heading, desc, cta);
       grid.append(state);
     }
 
