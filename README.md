@@ -1,6 +1,6 @@
 # edwardkot.com
 
-Photography portfolio for Edward Kot.
+Photography portfolio and mobile imaging services site for Edward Kot.
 
 ## Stack
 - Pure HTML/CSS/JS — no build step required
@@ -22,9 +22,13 @@ Photography portfolio for Edward Kot.
 /
 ├── index.html          — Homepage
 ├── works.html          — Photo grid
+├── mobile-imaging.html — Smartphone camera sample photography service
 ├── about.html          — About page
 ├── collaborate.html    — Collaborate page
 ├── contact.html        — Contact page
+├── robots.txt          — Search and AI crawler rules
+├── sitemap.xml         — Public page index
+├── favicon.svg         — Browser icon
 ├── _data/
 │   └── works.json      — Photo library data
 └── admin/
@@ -35,3 +39,13 @@ Photography portfolio for Edward Kot.
 ## R2 image naming convention
 
 Use lowercase, hyphens, no spaces: `milan-street-01.jpg`
+
+## Works data format
+
+`_data/works.json` uses an `items` array so it remains compatible with Decap CMS:
+
+```json
+{
+  "items": []
+}
+```

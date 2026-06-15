@@ -3,64 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Edward Kot</title>
+  <title>About Edward Kot | Milan Photographer &amp; Mobile Imaging Specialist</title>
+  <meta name="description" content="Edward Kot is a Milan-based photographer specializing in smartphone camera samples, street lifestyle imagery and commercial photography across Europe.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About Edward Kot | Photographer in Milan">
+  <meta property="og:description" content="Smartphone camera sample, street lifestyle and commercial photographer working across Europe.">
+  <meta property="og:url" content="https://edwardkot.com/about.html">
+  <link rel="canonical" href="https://edwardkot.com/about.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://edwardkot.com/about.html#profile",
+    "url": "https://edwardkot.com/about.html",
+    "name": "About Edward Kot",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://edwardkot.com/#person",
+      "name": "Edward Kot",
+      "url": "https://edwardkot.com/",
+      "email": "mailto:geshenfeng1@gmail.com",
+      "jobTitle": "Photographer",
+      "address": {"@type": "PostalAddress", "addressLocality": "Milan", "addressCountry": "IT"},
+      "knowsLanguage": ["Chinese", "English", "Italian"],
+      "knowsAbout": ["Smartphone camera sample photography", "Mobile imaging", "Street photography", "Lifestyle photography", "Commercial photography"],
+      "sameAs": [
+        "https://instagram.com/edwardkot",
+        "https://www.xiaohongshu.com/user/profile/57553d947fc5b85d339ffc71"
+      ]
+    }
+  }
+  </script>
   <style>
-    :root { --cream:#f8f6f2; --ink:#1a1916; --mid:#888580; --faint:#e4e1db; }
+    :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn 0.6s ease forwards}
+    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn .6s ease forwards}
     @keyframes fadeIn{to{opacity:1}}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:0.5px solid var(--faint)}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:0.15em;color:var(--ink);text-decoration:none;text-transform:lowercase}
-    .nav-links{display:flex;gap:2.5rem;list-style:none}
-    .nav-links a{font-size:0.65rem;letter-spacing:0.22em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s}
-    .nav-links a:hover,.nav-links a.active{color:var(--ink)}
-    main{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 120px)}
-    .about-image{background:var(--faint);position:relative;min-height:500px}
-    .about-image img{width:100%;height:100%;object-fit:cover;display:block}
-    .about-image-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-    .about-image-placeholder span{font-size:0.6rem;letter-spacing:0.2em;color:#ccc;text-transform:uppercase}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:.5px solid var(--faint)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:.15em;color:var(--ink);text-decoration:none;text-transform:lowercase;flex-shrink:0}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{font-size:.62rem;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active,.nav-links a:focus-visible{color:var(--ink)}
+    main{flex:1;display:grid;grid-template-columns:minmax(300px,.85fr) minmax(480px,1.15fr);min-height:calc(100vh - 120px)}
+    .about-visual{background:var(--ink);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:620px;padding:3rem;text-align:center}
+    .about-monogram{font-family:'Cormorant Garamond',serif;font-size:clamp(7rem,15vw,13rem);font-weight:300;line-height:.8;letter-spacing:-.04em}
+    .about-location{margin-top:2.5rem;font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(248,246,242,.55)}
     .about-text{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center}
-    .about-label{font-size:0.6rem;letter-spacing:0.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
-    .about-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;color:var(--ink);margin-bottom:2rem;letter-spacing:0.02em}
+    .about-label{font-size:.6rem;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
+    .about-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.8rem);line-height:1.05;color:var(--ink);margin-bottom:2.2rem;letter-spacing:.02em}
     .about-heading em{font-style:italic}
-    .about-body{font-size:0.875rem;line-height:1.9;color:var(--mid);max-width:420px}
+    .about-body{font-size:.875rem;line-height:1.9;color:var(--mid);max-width:560px}
     .about-body p{margin-bottom:1.25rem}
-    .about-avail{margin-top:2.5rem;padding-top:2rem;border-top:0.5px solid var(--faint);font-size:0.6rem;letter-spacing:0.25em;color:#bbb;text-transform:uppercase}
-    footer{padding:1.5rem 3rem;border-top:0.5px solid var(--faint);display:flex;justify-content:space-between}
-    footer span{font-size:0.6rem;letter-spacing:0.15em;color:#ccc;text-transform:uppercase}
-    @media(max-width:768px){main{grid-template-columns:1fr}.about-image{min-height:300px}.about-text{padding:3rem 1.5rem}nav{padding:1.5rem}footer{padding:1.5rem}}
+    .facts{margin-top:2rem;border-top:.5px solid var(--faint);max-width:620px}
+    .fact{display:grid;grid-template-columns:130px 1fr;gap:1.5rem;padding:1rem 0;border-bottom:.5px solid var(--faint)}
+    .fact dt{font-size:.56rem;letter-spacing:.18em;color:#aaa;text-transform:uppercase}
+    .fact dd{font-size:.78rem;line-height:1.7;color:var(--ink)}
+    .fact a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:.5px}
+    .about-avail{margin-top:2rem;font-size:.58rem;letter-spacing:.22em;color:#aaa;text-transform:uppercase}
+    footer{padding:1.5rem 3rem;border-top:.5px solid var(--faint);display:flex;justify-content:space-between}
+    footer span{font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase}
+    @media(max-width:900px){nav{align-items:flex-start;padding:1.4rem 1.5rem;gap:1.5rem}.nav-links{gap:1.15rem;overflow-x:auto;padding-bottom:.3rem}.nav-links a{font-size:.56rem;letter-spacing:.15em}main{grid-template-columns:1fr}.about-visual{min-height:360px}.about-text{padding:4rem 2rem}}
+    @media(max-width:600px){nav{flex-direction:column}.nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:.9rem 1.2rem}.about-text{padding:3.5rem 1.5rem}.fact{grid-template-columns:1fr;gap:.35rem}footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}}
+    @media(prefers-reduced-motion:reduce){body{animation:none;opacity:1}}
   </style>
 </head>
 <body>
-  <nav>
+  <nav aria-label="Primary navigation">
     <a class="nav-logo" href="/">edward kot</a>
     <ul class="nav-links">
       <li><a href="works.html">Works</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="mobile-imaging.html">Mobile Imaging</a></li>
+      <li><a href="about.html" class="active" aria-current="page">About</a></li>
       <li><a href="collaborate.html">Collaborate</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <main>
-    <div class="about-image">
-      <div class="about-image-placeholder"><span>Portrait photo</span></div>
+    <div class="about-visual" aria-hidden="true">
+      <span class="about-monogram">EK</span>
+      <span class="about-location">Milan · Europe</span>
     </div>
-    <div class="about-text">
-      <p class="about-label">About</p>
-      <h1 class="about-heading">Edward Kot<br><em>Photographer</em></h1>
+    <article class="about-text">
+      <p class="about-label">About Edward Kot</p>
+      <h1 class="about-heading">Photographer &amp;<br><em>Mobile Imaging Specialist</em></h1>
       <div class="about-body">
-        <p>Based in Milan, working across Europe. Edward Kot's photography is drawn to the space between — the quiet interval before something begins, or after it ends.</p>
-        <p>His work spans editorial, commercial, and personal documentary — rooted in a sensitivity to light, atmosphere, and the subtle gestures that pass unnoticed.</p>
-        <p>Clients and collaborators include brands, agencies, and publications operating across fashion, culture, and lifestyle.</p>
+        <p>Edward Kot is a Milan-based photographer working across Europe. He specializes in official smartphone camera sample photography, street lifestyle imagery and commercial visual assignments.</p>
+        <p>He has produced camera sample photography for Xiaomi, OPPO and realme across multiple device launches. His images have been presented at official product launch events, translating mobile imaging technology into credible photographs made in real European locations.</p>
+        <p>Alongside mobile imaging work, his practice spans editorial and personal documentary photography, with an observational approach to light, atmosphere and everyday gestures.</p>
       </div>
+      <dl class="facts">
+        <div class="fact"><dt>Based in</dt><dd>Milan, Italy</dd></div>
+        <div class="fact"><dt>Available</dt><dd>Commercial photography assignments across Italy and Europe</dd></div>
+        <div class="fact"><dt>Specialization</dt><dd>Smartphone camera samples, mobile imaging, street lifestyle and commercial photography</dd></div>
+        <div class="fact"><dt>Brand experience</dt><dd>Xiaomi, OPPO and realme</dd></div>
+        <div class="fact"><dt>Languages</dt><dd>Chinese and English; basic Italian</dd></div>
+        <div class="fact"><dt>Profiles</dt><dd><a href="https://instagram.com/edwardkot" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.xiaohongshu.com/user/profile/57553d947fc5b85d339ffc71" target="_blank" rel="noopener noreferrer">Xiaohongshu</a></dd></div>
+        <div class="fact"><dt>Email</dt><dd><a href="mailto:geshenfeng1@gmail.com">geshenfeng1@gmail.com</a></dd></div>
+      </dl>
       <p class="about-avail">Available for commissions across Europe</p>
-    </div>
+    </article>
   </main>
+
   <footer>
-    <span>© 2025 Edward Kot</span>
+    <span>© 2026 Edward Kot</span>
     <span>edwardkot.com</span>
   </footer>
 </body>

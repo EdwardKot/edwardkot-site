@@ -3,85 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collaborate — Edward Kot</title>
+  <title>Collaborate with Edward Kot | Photography Across Europe</title>
+  <meta name="description" content="Work with Milan-based photographer Edward Kot on mobile imaging, commercial, editorial, travel and documentary photography assignments across Europe.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Collaborate with Edward Kot">
+  <meta property="og:description" content="Mobile imaging, commercial, editorial and documentary photography assignments across Europe.">
+  <meta property="og:url" content="https://edwardkot.com/collaborate.html">
+  <link rel="canonical" href="https://edwardkot.com/collaborate.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet">
   <style>
     :root{--cream:#f8f6f2;--ink:#1a1916;--mid:#888580;--faint:#e4e1db}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn 0.6s ease forwards}
+    body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;min-height:100vh;display:flex;flex-direction:column;opacity:0;animation:fadeIn .6s ease forwards}
     @keyframes fadeIn{to{opacity:1}}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:0.5px solid var(--faint)}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:0.15em;color:var(--ink);text-decoration:none;text-transform:lowercase}
-    .nav-links{display:flex;gap:2.5rem;list-style:none}
-    .nav-links a{font-size:0.65rem;letter-spacing:0.22em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s}
-    .nav-links a:hover,.nav-links a.active{color:var(--ink)}
-    main{flex:1;padding:6rem 3rem;max-width:800px}
-    .page-label{font-size:0.6rem;letter-spacing:0.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
-    .page-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.5rem,5vw,4rem);line-height:1;color:var(--ink);margin-bottom:3rem;letter-spacing:0.02em}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;border-bottom:.5px solid var(--faint)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.1rem;letter-spacing:.15em;color:var(--ink);text-decoration:none;text-transform:lowercase;flex-shrink:0}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{font-size:.62rem;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;transition:color .25s;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active,.nav-links a:focus-visible{color:var(--ink)}
+    main{flex:1;padding:6rem 3rem;max-width:940px}
+    .page-label{font-size:.6rem;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-bottom:2rem}
+    .page-heading{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.8rem,5vw,4.5rem);line-height:1;color:var(--ink);margin-bottom:3rem;letter-spacing:.02em}
     .page-heading em{font-style:italic}
-    .collab-intro{font-size:0.9rem;line-height:1.9;color:var(--mid);max-width:520px;margin-bottom:4rem}
-    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:0.5px solid var(--faint)}
-    .service-item{padding:2rem 0;border-bottom:0.5px solid var(--faint);padding-right:3rem}
-    .service-item:nth-child(odd){padding-right:3rem}
-    .service-num{font-size:0.55rem;letter-spacing:0.2em;color:#ccc;text-transform:uppercase;margin-bottom:0.75rem}
-    .service-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.4rem;color:var(--ink);margin-bottom:0.5rem;letter-spacing:0.04em}
-    .service-desc{font-size:0.8rem;line-height:1.8;color:var(--mid)}
-    .collab-cta{margin-top:4rem;padding-top:3rem;border-top:0.5px solid var(--faint)}
-    .collab-cta p{font-size:0.8rem;color:var(--mid);margin-bottom:1.5rem;line-height:1.8}
-    .cta-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;transition:gap 0.25s}
-    .cta-link:hover{gap:16px}
-    .cta-link::after{content:'→';font-size:0.9rem}
-    footer{padding:1.5rem 3rem;border-top:0.5px solid var(--faint);display:flex;justify-content:space-between}
-    footer span{font-size:0.6rem;letter-spacing:0.15em;color:#ccc;text-transform:uppercase}
-    @media(max-width:768px){nav{padding:1.5rem}main{padding:4rem 1.5rem}.services-grid{grid-template-columns:1fr}footer{padding:1.5rem}}
+    .collab-intro{font-size:.9rem;line-height:1.9;color:var(--mid);max-width:620px;margin-bottom:4rem}
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:.5px solid var(--faint)}
+    .service-item{padding:2rem 3rem 2rem 0;border-bottom:.5px solid var(--faint)}
+    .service-item:nth-child(even){padding-left:3rem;border-left:.5px solid var(--faint)}
+    .service-item.featured{grid-column:1/-1;display:grid;grid-template-columns:80px 240px 1fr;gap:1.5rem;align-items:baseline;padding-right:0}
+    .service-item.featured .service-num{margin:0}
+    .service-num{font-size:.55rem;letter-spacing:.2em;color:#aaa;text-transform:uppercase;margin-bottom:.75rem}
+    .service-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.45rem;color:var(--ink);margin-bottom:.5rem;letter-spacing:.03em}
+    .service-desc{font-size:.8rem;line-height:1.8;color:var(--mid)}
+    .service-desc a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:.5px}
+    .collab-cta{margin-top:4rem;padding-top:3rem;border-top:.5px solid var(--faint)}
+    .collab-cta p{font-size:.8rem;color:var(--mid);margin-bottom:1.5rem;line-height:1.8}
+    .cta-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;transition:gap .25s}
+    .cta-link:hover,.cta-link:focus-visible{gap:16px}
+    .cta-link::after{content:'\2192';font-size:.9rem}
+    footer{padding:1.5rem 3rem;border-top:.5px solid var(--faint);display:flex;justify-content:space-between}
+    footer span{font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase}
+    @media(max-width:900px){nav{align-items:flex-start;padding:1.4rem 1.5rem;gap:1.5rem}.nav-links{gap:1.15rem;overflow-x:auto;padding-bottom:.3rem}.nav-links a{font-size:.56rem;letter-spacing:.15em}main{padding:5rem 2rem}}
+    @media(max-width:650px){nav{flex-direction:column}.nav-links{width:100%;flex-wrap:wrap;overflow:visible;gap:.9rem 1.2rem}main{padding:4rem 1.5rem}.services-grid{grid-template-columns:1fr}.service-item,.service-item:nth-child(even){padding:1.75rem 0;border-left:0}.service-item.featured{grid-column:1;display:block}.service-item.featured .service-num{margin-bottom:.75rem}footer{padding:1.5rem;flex-direction:column;gap:.5rem;text-align:center}}
+    @media(prefers-reduced-motion:reduce){body{animation:none;opacity:1}}
   </style>
 </head>
 <body>
-  <nav>
+  <nav aria-label="Primary navigation">
     <a class="nav-logo" href="/">edward kot</a>
     <ul class="nav-links">
       <li><a href="works.html">Works</a></li>
+      <li><a href="mobile-imaging.html">Mobile Imaging</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="collaborate.html" class="active">Collaborate</a></li>
+      <li><a href="collaborate.html" class="active" aria-current="page">Collaborate</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <main>
     <p class="page-label">Collaborate</p>
     <h1 class="page-heading">Working<br><em>Together</em></h1>
-    <p class="collab-intro">Open to editorial assignments, brand campaigns, and documentary projects. Comfortable working solo or as part of a larger creative team across Europe.</p>
+    <p class="collab-intro">Available for mobile imaging, editorial, brand and documentary assignments across Europe. Edward can work directly with brand teams, agencies and larger creative productions.</p>
     <div class="services-grid">
-      <div class="service-item">
+      <article class="service-item featured">
         <p class="service-num">01</p>
-        <h2 class="service-title">Editorial</h2>
-        <p class="service-desc">Magazine stories, portrait sessions, and feature assignments for print and digital publications.</p>
-      </div>
-      <div class="service-item">
+        <h2 class="service-title">Mobile Imaging</h2>
+        <p class="service-desc">Official smartphone camera sample photography and European street lifestyle imagery. Previous launch work includes Xiaomi, OPPO and realme. <a href="mobile-imaging.html">View mobile imaging experience</a>.</p>
+      </article>
+      <article class="service-item">
         <p class="service-num">02</p>
-        <h2 class="service-title">Brand & Commercial</h2>
-        <p class="service-desc">Campaign photography for fashion, lifestyle, and consumer brands. Art-directed or concept-led.</p>
-      </div>
-      <div class="service-item">
+        <h2 class="service-title">Editorial</h2>
+        <p class="service-desc">Magazine stories, portrait sessions and feature assignments for print and digital publications.</p>
+      </article>
+      <article class="service-item">
         <p class="service-num">03</p>
-        <h2 class="service-title">Travel</h2>
-        <p class="service-desc">Location scouting and travel photography across Europe. Experienced working in unfamiliar environments on tight schedules.</p>
-      </div>
-      <div class="service-item">
+        <h2 class="service-title">Brand &amp; Commercial</h2>
+        <p class="service-desc">Campaign and visual content photography for technology, fashion, lifestyle and consumer brands.</p>
+      </article>
+      <article class="service-item">
         <p class="service-num">04</p>
+        <h2 class="service-title">Travel</h2>
+        <p class="service-desc">Location research and travel photography across Europe, including unfamiliar environments and compact schedules.</p>
+      </article>
+      <article class="service-item">
+        <p class="service-num">05</p>
         <h2 class="service-title">Documentary</h2>
-        <p class="service-desc">Long-form personal and commissioned documentary work. Patient, observational, unobtrusive.</p>
-      </div>
+        <p class="service-desc">Long-form personal and commissioned documentary work with a patient, observational approach.</p>
+      </article>
     </div>
     <div class="collab-cta">
-      <p>For rates, availability, and project enquiries, get in touch directly.</p>
-      <a class="cta-link" href="contact.html">Contact</a>
+      <p>For availability, production scope and project enquiries, contact Edward directly.</p>
+      <a class="cta-link" href="mailto:geshenfeng1@gmail.com">geshenfeng1@gmail.com</a>
     </div>
   </main>
+
   <footer>
-    <span>© 2025 Edward Kot</span>
-    <span>edwardkot.com</span>
+    <span>© 2026 Edward Kot</span>
+    <span>Milan · Europe</span>
   </footer>
 </body>
 </html>

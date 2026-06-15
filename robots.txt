@@ -1,0 +1,15 @@
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: *
+Disallow: /admin/
+
+Sitemap: https://edwardkot.com/sitemap.xml
