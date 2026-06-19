@@ -10,10 +10,10 @@ Photography portfolio and mobile imaging services site for Edward Kot.
 
 ## Adding photos (normal workflow)
 
-1. Upload compressed photo to Cloudflare R2 bucket (`edwardkot-images`)
+1. Upload compressed display photo to Cloudflare R2 bucket (`edwardkot-images`)
 2. Go to `edwardkot.com/admin`
 3. Log in with GitHub
-4. Open "Works" → add entry with filename + category
+4. Open "Works" → add entry with the R2 object key
 5. Save → auto-deploys in ~1 minute
 
 ## File structure
@@ -21,11 +21,15 @@ Photography portfolio and mobile imaging services site for Edward Kot.
 ```
 /
 ├── index.html          — Homepage
-├── works.html          — Photo grid
-├── mobile-imaging.html — Smartphone camera sample photography service
-├── about.html          — About page
-├── collaborate.html    — Collaborate page
-├── contact.html        — Contact page
+├── work/               — Clean-path photo grid
+├── mobile-imaging/     — Smartphone sample photography service
+├── about/              — About page
+├── services/           — Services page
+├── contact/            — Contact page
+├── zh/                 — Chinese summary page
+├── _redirects          — Legacy .html redirects for Cloudflare Pages
+├── llms.txt            — AI-readable site summary
+├── llms-full.txt       — Extended AI-readable site context
 ├── robots.txt          — Search and AI crawler rules
 ├── sitemap.xml         — Public page index
 ├── favicon.svg         — Browser icon
@@ -38,7 +42,9 @@ Photography portfolio and mobile imaging services site for Edward Kot.
 
 ## R2 image naming convention
 
-Use lowercase, hyphens, no spaces: `milan-street-01.jpg`
+Use lowercase, hyphens, no spaces. Current display images use:
+
+`work/display/work-001.jpg`
 
 ## Works data format
 

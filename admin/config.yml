@@ -20,13 +20,6 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "File (R2 filename)", name: "file", widget: "string", hint: "Just the filename, e.g. paris-01.jpg" }
-              - label: "Category"
-                name: "category"
-                widget: "select"
-                options:
-                  - { label: "Editorial", value: "editorial" }
-                  - { label: "Commercial", value: "commercial" }
-                  - { label: "Travel", value: "travel" }
-                  - { label: "Personal", value: "personal" }
+              - { label: "File (R2 key)", name: "file", widget: "string", hint: "R2 object key, e.g. work/display/work-001.jpg" }
+              - { label: "Alt text", name: "alt", widget: "string", required: false, hint: "Describe the actual photo in 10-15 words, e.g. Rainy evening street scene, Milan - smartphone sample image by Edward Kot." }
               - { label: "Year", name: "year", widget: "string", required: false }

@@ -1,3 +1,389 @@
 {
-  "items": []
+  "items": [
+    {
+      "title": "Morning Street Geometry",
+      "file": "work/display/work-001.jpg",
+      "thumbnail": "work/display/work-001.jpg",
+      "year": "2022",
+      "alt": "High-angle European street in warm light, photographed by Edward Kot."
+    },
+    {
+      "title": "Rocky Shore Walk",
+      "file": "work/display/work-002.jpg",
+      "thumbnail": "work/display/work-002.jpg",
+      "year": "2022",
+      "alt": "People and a dog on a rocky shoreline, photographed by Edward Kot."
+    },
+    {
+      "title": "Twilight Swimmer",
+      "file": "work/display/work-003.jpg",
+      "thumbnail": "work/display/work-003.jpg",
+      "year": "2022",
+      "alt": "Twilight swimmer in the sea, cinematic travel photograph by Edward Kot."
+    },
+    {
+      "title": "Rain Reflection",
+      "file": "work/display/work-004.jpg",
+      "thumbnail": "work/display/work-004.jpg",
+      "year": "2024",
+      "alt": "Rainy street reflection with umbrella, mobile imaging photograph by Edward Kot."
+    },
+    {
+      "title": "Coastal Jump",
+      "file": "work/display/work-005.jpg",
+      "thumbnail": "work/display/work-005.jpg",
+      "year": "2024",
+      "alt": "Cliffside swimmer jumping into blue water, travel photograph by Edward Kot."
+    },
+    {
+      "title": "Dogs in the Park",
+      "file": "work/display/work-006.jpg",
+      "thumbnail": "work/display/work-006.jpg",
+      "year": "2024",
+      "alt": "Child watching dogs in a park, documentary photograph by Edward Kot."
+    },
+    {
+      "title": "Cathedral Crowd",
+      "file": "work/display/work-007.jpg",
+      "thumbnail": "work/display/work-007.jpg",
+      "year": "2024",
+      "alt": "Crowd outside a European cathedral, documentary street image by Edward Kot."
+    },
+    {
+      "title": "Harbor Afternoon",
+      "file": "work/display/work-008.jpg",
+      "thumbnail": "work/display/work-008.jpg",
+      "year": "2024",
+      "alt": "Harbor waterfront in afternoon light, European travel photograph by Edward Kot."
+    },
+    {
+      "title": "Country Road",
+      "file": "work/display/work-009.jpg",
+      "thumbnail": "work/display/work-009.jpg",
+      "year": "2020",
+      "alt": "Black and white rural road with a small figure, photograph by Edward Kot."
+    },
+    {
+      "title": "Window Portrait",
+      "file": "work/display/work-010.jpg",
+      "thumbnail": "work/display/work-010.jpg",
+      "year": "2020",
+      "alt": "Black and white window portrait, personal photograph by Edward Kot."
+    },
+    {
+      "title": "Children at the Street Corner",
+      "file": "work/display/work-011.jpg",
+      "thumbnail": "work/display/work-011.jpg",
+      "year": "2020",
+      "alt": "Children with toy strollers on a street corner, photographed by Edward Kot."
+    },
+    {
+      "title": "Small Dog in the Field",
+      "file": "work/display/work-012.jpg",
+      "thumbnail": "work/display/work-012.jpg",
+      "year": "2020",
+      "alt": "Small dog crossing a dark field, black and white photograph by Edward Kot."
+    },
+    {
+      "title": "Vintage Race Moment",
+      "file": "work/display/work-013.jpg",
+      "thumbnail": "work/display/work-013.jpg",
+      "year": "2023",
+      "alt": "Vintage race car scene with people, editorial photograph by Edward Kot."
+    },
+    {
+      "title": "Park Statue",
+      "file": "work/display/work-014.jpg",
+      "thumbnail": "work/display/work-014.jpg",
+      "year": "2024",
+      "alt": "Girl standing near a park statue, documentary photograph by Edward Kot."
+    },
+    {
+      "title": "Harbor Boat at Dusk",
+      "file": "work/display/work-015.jpg",
+      "thumbnail": "work/display/work-015.jpg",
+      "year": "2023",
+      "alt": "Red harbor boat under a violet sky, travel photograph by Edward Kot."
+    },
+    {
+      "title": "Red Cabin at Dusk",
+      "file": "work/display/work-016.jpg",
+      "thumbnail": "work/display/work-016.jpg",
+      "year": "2023",
+      "alt": "Bicycle beside red waterfront cabins at dusk, photograph by Edward Kot."
+    },
+    {
+      "title": "Venice Silhouette",
+      "file": "work/display/work-017.jpg",
+      "thumbnail": "work/display/work-017.jpg",
+      "year": "2023",
+      "alt": "Silhouette by the Venice lagoon in backlight, photograph by Edward Kot."
+    },
+    {
+      "title": "Architectural Light Study",
+      "file": "work/display/work-018.jpg",
+      "thumbnail": "work/display/work-018.jpg",
+      "year": "2025",
+      "alt": "Architectural shadows and a small figure, mobile sample image by Edward Kot."
+    },
+    {
+      "title": "Street Crossing Gesture",
+      "file": "work/display/work-019.jpg",
+      "thumbnail": "work/display/work-019.jpg",
+      "year": "2025",
+      "alt": "Street-level gesture with a small dog in a European city, photographed by Edward Kot."
+    },
+    {
+      "title": "Crosswalk Figure",
+      "file": "work/display/work-020.jpg",
+      "thumbnail": "work/display/work-020.jpg",
+      "year": "2025",
+      "alt": "Black and white crosswalk figure in city traffic, photograph by Edward Kot."
+    },
+    {
+      "title": "Beach Wave",
+      "file": "work/display/work-021.jpg",
+      "thumbnail": "work/display/work-021.jpg",
+      "year": "2025",
+      "alt": "People playing in ocean waves, real-world sample photograph by Edward Kot."
+    },
+    {
+      "title": "Shadow Corridor",
+      "file": "work/display/work-022.jpg",
+      "thumbnail": "work/display/work-022.jpg",
+      "year": "2025",
+      "alt": "Deep corridor shadows in a European arcade, photograph by Edward Kot."
+    },
+    {
+      "title": "Urban Courtyard",
+      "file": "work/display/work-023.jpg",
+      "thumbnail": "work/display/work-023.jpg",
+      "year": "2025",
+      "alt": "Modern courtyard with geometric shadows, mobile imaging photograph by Edward Kot."
+    },
+    {
+      "title": "Galleria Pigeons",
+      "file": "work/display/work-024.jpg",
+      "thumbnail": "work/display/work-024.jpg",
+      "year": "2025",
+      "alt": "Pigeons flying through Milan Galleria, smartphone sample image by Edward Kot."
+    },
+    {
+      "title": "Festival Color",
+      "file": "work/display/work-025.jpg",
+      "thumbnail": "work/display/work-025.jpg",
+      "year": "2025",
+      "alt": "Crowd covered in festival colors, documentary photograph by Edward Kot."
+    },
+    {
+      "title": "Venice Evening Passage",
+      "file": "work/display/work-026.jpg",
+      "thumbnail": "work/display/work-026.jpg",
+      "year": "2025",
+      "alt": "Quiet evening canal passage in Venice, travel photograph by Edward Kot."
+    },
+    {
+      "title": "Square Dog Walk",
+      "file": "work/display/work-027.jpg",
+      "thumbnail": "work/display/work-027.jpg",
+      "year": "2025",
+      "alt": "Black and white square with a person walking a dog, photograph by Edward Kot."
+    },
+    {
+      "title": "Blue Pool Figure",
+      "file": "work/display/work-028.jpg",
+      "thumbnail": "work/display/work-028.jpg",
+      "year": "2025",
+      "alt": "Figure floating in blue pool water, mobile imaging photograph by Edward Kot."
+    },
+    {
+      "title": "Wet Street After Rain",
+      "file": "work/display/work-029.jpg",
+      "thumbnail": "work/display/work-029.jpg",
+      "year": "2025",
+      "alt": "Rainy European street after a storm, photograph by Edward Kot."
+    },
+    {
+      "title": "Parade Gesture",
+      "file": "work/display/work-030.jpg",
+      "thumbnail": "work/display/work-030.jpg",
+      "year": "2025",
+      "alt": "Performer raising hands in a street parade, documentary image by Edward Kot."
+    },
+    {
+      "title": "Fireworks Silhouette",
+      "file": "work/display/work-031.jpg",
+      "thumbnail": "work/display/work-031.jpg",
+      "year": "2025",
+      "alt": "Fireworks seen behind a dark silhouette, night photograph by Edward Kot."
+    },
+    {
+      "title": "Football Portrait",
+      "file": "work/display/work-032.jpg",
+      "thumbnail": "work/display/work-032.jpg",
+      "year": "2025",
+      "alt": "Football player portrait from mobile brand sample photography by Edward Kot."
+    },
+    {
+      "title": "Cathedral Procession",
+      "file": "work/display/work-033.jpg",
+      "thumbnail": "work/display/work-033.jpg",
+      "year": "2025",
+      "alt": "Procession outside a European cathedral, documentary photograph by Edward Kot."
+    },
+    {
+      "title": "Shoreline Child",
+      "file": "work/display/work-034.jpg",
+      "thumbnail": "work/display/work-034.jpg",
+      "year": "2025",
+      "alt": "Child crouching by the shoreline in golden light, photograph by Edward Kot."
+    },
+    {
+      "title": "Night Station",
+      "file": "work/display/work-035.jpg",
+      "thumbnail": "work/display/work-035.jpg",
+      "year": "2025",
+      "alt": "People waiting at a night station, street photograph by Edward Kot."
+    },
+    {
+      "title": "Sea Net",
+      "file": "work/display/work-036.jpg",
+      "thumbnail": "work/display/work-036.jpg",
+      "year": "2025",
+      "alt": "Figure with blue net beside breaking waves, sample image by Edward Kot."
+    },
+    {
+      "title": "Training Catch",
+      "file": "work/display/work-037.jpg",
+      "thumbnail": "work/display/work-037.jpg",
+      "year": "2025",
+      "alt": "Athlete catching a ball on a field, action photograph by Edward Kot."
+    },
+    {
+      "title": "Blue Sweatshirt Portrait",
+      "file": "work/display/work-038.jpg",
+      "thumbnail": "work/display/work-038.jpg",
+      "year": "2025",
+      "alt": "Portrait of an athlete in a blue sweatshirt, photographed by Edward Kot."
+    },
+    {
+      "title": "Yellow Flower Frame",
+      "file": "work/display/work-039.jpg",
+      "thumbnail": "work/display/work-039.jpg",
+      "year": "2025",
+      "alt": "Person framed by yellow flowers, real-world sample photograph by Edward Kot."
+    },
+    {
+      "title": "Beach Wave II",
+      "file": "work/display/work-040.jpg",
+      "thumbnail": "work/display/work-040.jpg",
+      "year": "2025",
+      "alt": "Hands raised near waves on a crowded beach, photograph by Edward Kot."
+    },
+    {
+      "title": "Cyclists by the Columns",
+      "file": "work/display/work-041.jpg",
+      "thumbnail": "work/display/work-041.jpg",
+      "year": "2025",
+      "alt": "Cyclists passing columns on a Milan street, photograph by Edward Kot."
+    },
+    {
+      "title": "Duomo Street Moment",
+      "file": "work/display/work-042.jpg",
+      "thumbnail": "work/display/work-042.jpg",
+      "year": "2025",
+      "alt": "Pigeon above Milan Duomo square, street photograph by Edward Kot."
+    },
+    {
+      "title": "Arcade Shadows",
+      "file": "work/display/work-043.jpg",
+      "thumbnail": "work/display/work-043.jpg",
+      "year": "2025",
+      "alt": "People walking through arcade shadows, mobile imaging photograph by Edward Kot."
+    },
+    {
+      "title": "White Dress in Shadow",
+      "file": "work/display/work-044.jpg",
+      "thumbnail": "work/display/work-044.jpg",
+      "year": "2025",
+      "alt": "Woman in a white dress crossing sharp shadows, photograph by Edward Kot."
+    },
+    {
+      "title": "Coastal Blue Hour",
+      "file": "work/display/work-045.jpg",
+      "thumbnail": "work/display/work-045.jpg",
+      "year": "2025",
+      "alt": "Coastal village at blue hour, cinematic travel photograph by Edward Kot."
+    },
+    {
+      "title": "Backlit Shoreline",
+      "file": "work/display/work-046.jpg",
+      "thumbnail": "work/display/work-046.jpg",
+      "year": "2025",
+      "alt": "Backlit figure walking along the shore, photograph by Edward Kot."
+    },
+    {
+      "title": "Park Statue II",
+      "file": "work/display/work-047.jpg",
+      "thumbnail": "work/display/work-047.jpg",
+      "year": "2025",
+      "alt": "Child near a park statue in soft light, photograph by Edward Kot."
+    },
+    {
+      "title": "Milan Rooftop Dusk",
+      "file": "work/display/work-048.jpg",
+      "thumbnail": "work/display/work-048.jpg",
+      "year": "2025",
+      "alt": "Milan rooftops at dusk with statues, city photograph by Edward Kot."
+    },
+    {
+      "title": "Coastal House",
+      "file": "work/display/work-049.jpg",
+      "thumbnail": "work/display/work-049.jpg",
+      "year": "2025",
+      "alt": "Coastal house facing blue water and mountains, photograph by Edward Kot."
+    },
+    {
+      "title": "Milan Sunset Avenue",
+      "file": "work/display/work-050.jpg",
+      "thumbnail": "work/display/work-050.jpg",
+      "year": "2025",
+      "alt": "Milan avenue glowing at sunset, city photograph by Edward Kot."
+    },
+    {
+      "title": "Blue Hour Plaza",
+      "file": "work/display/work-051.jpg",
+      "thumbnail": "work/display/work-051.jpg",
+      "year": "2025",
+      "alt": "Blue hour plaza with a small moving figure, photograph by Edward Kot."
+    },
+    {
+      "title": "Evening Street Corner",
+      "file": "work/display/work-052.jpg",
+      "thumbnail": "work/display/work-052.jpg",
+      "year": "2025",
+      "alt": "Evening street corner with green light, photograph by Edward Kot."
+    },
+    {
+      "title": "Twilight Street Crossing",
+      "file": "work/display/work-053.jpg",
+      "thumbnail": "work/display/work-053.jpg",
+      "year": "2025",
+      "alt": "People crossing a city street at twilight, photograph by Edward Kot."
+    },
+    {
+      "title": "Lit Evening Street",
+      "file": "work/display/work-054.jpg",
+      "thumbnail": "work/display/work-054.jpg",
+      "year": "2025",
+      "alt": "Lit evening street with a white car, photograph by Edward Kot."
+    },
+    {
+      "title": "Street Kiosk Night",
+      "file": "work/display/work-055.jpg",
+      "thumbnail": "work/display/work-055.jpg",
+      "year": "2025",
+      "alt": "Night street kiosk scene with blurred foreground, photograph by Edward Kot."
+    }
+  ]
 }

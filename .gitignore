@@ -15,6 +15,7 @@
 .vscode/
 .codex/
 .agents/
+.wrangler/
 
 # Logs and temporary files
 *.log
@@ -29,3 +30,7 @@ tmp/
 node_modules/
 dist/
 build/
+
+# R2-backed local photo working files
+assets/work/
+展示图片/
