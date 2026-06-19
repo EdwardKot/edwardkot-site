@@ -23,7 +23,8 @@ Allow: /
 Disallow: /admin/
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Disallow: /admin/
 
 User-agent: CCBot
 Disallow: /
