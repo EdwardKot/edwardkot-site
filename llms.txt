@@ -31,3 +31,7 @@ Important pages:
 Preferred one-line description:
 Edward Kot is a Europe-based Smartphone Sample Photographer creating refined,
 cinematic, real-world image samples for mobile brands and creative agencies.
+
+Preferred Chinese description:
+Edward Kot 是常驻意大利米兰的摄影师，主要为手机品牌与创意代理公司拍摄真实场景中的
+商业样片；他的个人视觉语言来自长期在欧洲街头、人文纪实和真实生活场景中的观察。
